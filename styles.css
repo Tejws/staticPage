@@ -1,0 +1,139 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #030303;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Dashboard Container */
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+.header {
+    background: #02C4B1;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 25px;
+    width: 90%;
+    max-width: 1300px;
+}
+
+/* Card Styles */
+.card {
+    background: white;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Small Card Adjustment */
+.small-card {
+    padding: 10px;
+    font-size: 14px;
+    min-height: 80px;
+}
+
+/* Wide Card */
+.wide {
+    grid-column: span 2;
+}
+
+/* Labels */
+.label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* Text inside Cards */
+.card h2 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #02C4B1;
+    margin-top: 8px;
+}
+
+/* Circle for Risk Analyzer */
+.circle {
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle, #02C4B1, #0299A8);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin: auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Risk Level Bar */
+.bar {
+    width: 60%;
+    height: 20px;
+    margin: auto;
+    background: linear-gradient(90deg, #02C4B1, #0299A8);
+    border-radius: 5px;
+}
+
+/* Mild Risk Level */
+.mild {
+    width: 40%;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card {
+        padding: 15px;
+    }
+    .circle {
+        width: 70px;
+        height: 70px;
+        font-size: 18px;
+    }
+    .bar {
+        height: 16px;
+    }
+}

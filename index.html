@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <div class="header">
+            <h1>Dashboard</h1>
+        </div>
+
+        <div class="grid-container">
+            <div class="card"> 
+                <p class="label">DAY</p> 
+                <h2>14</h2> 
+            </div>
+            <div class="card"> 
+                <p class="label">Project PERCENT COMPLETE</p> 
+                <h2>7.39</h2> 
+            </div>
+            <div class="card"> 
+                <p class="label">Risk ANALYZER</p> 
+                <div class="circle">3.00</div> 
+            </div>
+            <div class="card"> 
+                <p class="label">Current Risk LEVEL</p> 
+                <div class="bar mild"></div> 
+            </div>
+           
+            
+            <div class="card wide"> 
+                <p class="label">Products PERCENT COMPLETE</p> 
+                <canvas id="productsChart"></canvas> 
+            </div>
+            <div class="card wide"> 
+                <p class="label">Total Resources Used BY EACH PRODUCT</p> 
+                <canvas id="resourcesChart"></canvas> 
+            </div>
+            <div class="card"> 
+                <p class="label">Resources TOTAL AVAILABLE</p> 
+                <h2>50</h2> 
+            </div>
+            <div class="card"> 
+                <p class="label">Resources IN USE</p> 
+                <h2>14</h2> 
+            </div>
+            <div class="card"> 
+                <p class="label">Lost hours DUE TO RISK</p> 
+                <h2>0</h2> 
+            </div>
+            <div class="card"> 
+                <p class="label">Lost Days DUE TO RISK</p> 
+                <h2>0</h2> 
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
