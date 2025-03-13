@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     new Chart(ctx1, {
         type: "bar",
         data: {
-            labels: ["Product A", "Product B", "Product C"],
+            labels: ["Claim Approved", "Claim Processed", "Claim Remaining"],
             datasets: [{
                 label: "Percent Complete",
                 data: [65, 30, 10],
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     new Chart(ctx2, {
         type: "bar",
         data: {
-            labels: ["Product A", "Product B", "Product C"],
+            labels: ["Claim A", "Claim B", "Claim C"],
             datasets: [{
                 label: "Resources Used",
                 data: [4, 3, 6],
